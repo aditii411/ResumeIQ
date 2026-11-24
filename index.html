@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>ResumeIQ — Modern ATS Intelligence & Career Platform</title>
+
+  <!-- Google Font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Strict Light-Theme Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation (Pure White #FFFFFF with 1px #E2E8F0 right border - STRICTLY LIGHT) -->
+    <aside class="sidebar" id="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <span>ResumeIQ</span>
+        </div>
+        <span class="brand-badge">SaaS ATS</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Core Intelligence</div>
+        <div class="nav-item active" data-view="dashboard">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+          </span>
+          <span>ATS Dashboard</span>
+        </div>
+
+        <div class="nav-item" data-view="scanner">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+          </span>
+          <span>Resume Scanner</span>
+          <span class="nav-item-count">Live</span>
+        </div>
+
+        <div class="nav-item" data-view="simulator">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+          </span>
+          <span>"What-If" Simulator</span>
+          <span class="badge badge-matched" style="font-size: 0.65rem; padding: 0.1rem 0.35rem; margin-left: auto;">+18%</span>
+        </div>
+
+        <div class="nav-section-title">Optimization Tools</div>
+        <div class="nav-item" data-view="matrix">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </span>
+          <span>Skills Gap Matrix</span>
+          <span class="nav-item-count">16</span>
+        </div>
+
+        <div class="nav-item" data-view="optimizer">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+          </span>
+          <span>Bullet Rewriter</span>
+        </div>
+
+        <div class="nav-item" data-view="applications">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </span>
+          <span>Applications</span>
+          <span class="nav-item-count">6</span>
+        </div>
+
+        <div class="nav-section-title">Export & Compliance</div>
+        <div class="nav-item" data-view="report">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </span>
+          <span>Printable PDF Report</span>
+        </div>
+
+        <div class="nav-item" data-view="design">
+          <span class="nav-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </span>
+          <span>Theme Verification</span>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile-widget">
+          <div class="user-avatar">AW</div>
+          <div class="user-info">
+            <span class="user-name">Alexander Wright</span>
+            <span class="user-role">Staff Candidate</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Top Header Navigation (Pure White #FFFFFF with 1px #E2E8F0 bottom border - STRICTLY LIGHT) -->
+      <header class="top-header">
+        <div class="header-left">
+          <div class="header-search">
+            <span class="search-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </span>
+            <input type="text" placeholder="Search keywords, jobs, benchmarks..." />
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Target:</span>
+            <span class="badge badge-neutral" style="font-weight: 600;">CloudScale Systems (Greenhouse ATS)</span>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <button class="btn btn-secondary btn-sm" onclick="MODAL_CONTROLLER.open('uploadModal')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            Upload Resume
+          </button>
+          <button class="btn btn-primary btn-sm" onclick="APP.navigateTo('simulator')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+            Score Simulator
+          </button>
+        </div>
+      </header>
+
+      <!-- Page Canvas (#F8FAFC Canvas Background) -->
+      <main class="content-canvas">
+        <div id="dashboard-view-container"></div>
+        <div id="scanner-view-container" style="display: none;"></div>
+        <div id="simulator-view-container" style="display: none;"></div>
+        <div id="matrix-view-container" style="display: none;"></div>
+        <div id="optimizer-view-container" style="display: none;"></div>
+        <div id="applications-view-container" style="display: none;"></div>
+        <div id="report-view-container" style="display: none;"></div>
+        <div id="design-view-container" style="display: none;"></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Upload Resume Modal -->
+  <div class="modal-overlay" id="uploadModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Upload Resume for ATS Parsing</h3>
+        <button class="btn btn-ghost btn-icon-only" onclick="MODAL_CONTROLLER.close()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div style="border: 2px dashed #CBD5E1; border-radius: 12px; padding: 2.5rem 1.5rem; text-align: center; background: #F8FAFC; cursor: pointer; transition: all 150ms;" onclick="document.getElementById('file-upload-input').click()">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #EFF6FF; border: 1px solid #DBEAFE; color: #2563EB; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+          </div>
+          <h4 style="font-size: 0.95rem; font-weight: 600; color: #0F172A; margin-bottom: 0.25rem;">Click to select file or drag & drop</h4>
+          <p style="font-size: 0.8rem; color: #64748B;">Supports standard PDF, Word (.docx), or plain text (.txt)</p>
+          <input type="file" id="file-upload-input" style="display: none;" onchange="APP.notify('Resume uploaded successfully! Parsing keywords...'); MODAL_CONTROLLER.close();" />
+        </div>
+
+        <div style="margin-top: 1.25rem;">
+          <label style="font-weight: 600; font-size: 0.85rem; color: #0F172A; display: block; margin-bottom: 0.35rem;">Or Paste Resume Text Directly:</label>
+          <textarea rows="5" style="width: 100%; font-size: 0.825rem;" placeholder="Paste raw text here..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="MODAL_CONTROLLER.close()">Cancel</button>
+        <button class="btn btn-primary" onclick="APP.notify('Resume text imported.'); MODAL_CONTROLLER.close();">Parse & Analyze</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Job Description Modal -->
+  <div class="modal-overlay" id="jobModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Configure Target Job Description</h3>
+        <button class="btn btn-ghost btn-icon-only" onclick="MODAL_CONTROLLER.close()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div>
+            <label style="font-weight: 600; font-size: 0.85rem; color: #0F172A; display: block; margin-bottom: 0.35rem;">Role Title & Company</label>
+            <input type="text" id="target-job-title-input" value="Staff Cloud Platform Engineer · CloudScale Systems" style="width: 100%;">
+          </div>
+          <div>
+            <label style="font-weight: 600; font-size: 0.85rem; color: #0F172A; display: block; margin-bottom: 0.35rem;">Job Description Full Text</label>
+            <textarea id="target-job-desc-input" rows="8" style="width: 100%; font-size: 0.825rem; line-height: 1.5;"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="MODAL_CONTROLLER.close()">Cancel</button>
+        <button class="btn btn-primary" onclick="APP.notify('Job description updated!'); MODAL_CONTROLLER.close();">Update Target Criteria</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="assets/icons/icons.js"></script>
+  <script src="js/design-tokens.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/scanner.js"></script>
+  <script src="js/rewriter.js"></script>
+  <script src="js/pdf-generator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

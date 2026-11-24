@@ -1,0 +1,21 @@
+{
+  "name": "careersync-saas",
+  "version": "1.0.0",
+  "description": "Strict Light-Theme ATS Career Intelligence Platform with What-If Score Simulator & PDF Reporting",
+  "main": "index.html",
+  "scripts": {
+    "start": "python serve.py",
+    "serve": "python serve.py",
+    "open": "start index.html"
+  },
+  "keywords": [
+    "career-platform",
+    "ats-scanner",
+    "score-simulator",
+    "strict-light-theme",
+    "resume-matcher",
+    "saas"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT"
+}

@@ -1,0 +1,604 @@
+/* ==========================================================================
+   COMPONENTS: Pure White Cards, Strict Badges, Buttons, Modals & Banners
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Cards & Surfaces (Rounded-xl White Cards with 1px solid #E2E8F0 & shadow-sm)
+   -------------------------------------------------------------------------- */
+.card {
+  background-color: var(--bg-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-xl) !important;
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+  position: relative;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.card-footer {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --------------------------------------------------------------------------
+   "What-If" Score Simulator & Soft Tint Highlight Banner
+   (#EFF6FF background with #DBEAFE border)
+   -------------------------------------------------------------------------- */
+.tint-banner,
+.simulator-banner {
+  background-color: var(--tint-bg) !important;
+  border: 1px solid var(--tint-border) !important;
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  box-shadow: var(--shadow-xs);
+}
+
+.tint-banner-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #DBEAFE;
+  color: var(--primary);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tint-banner-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: 0.25rem;
+}
+
+.tint-banner-content p {
+  font-size: 0.875rem;
+  color: var(--text-body);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* --------------------------------------------------------------------------
+   Semantic Status Badges (Soft pastel fills with dark readable text)
+   -------------------------------------------------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.775rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+}
+
+/* Matched / High Score: #ECFDF5 bg, #065F46 text, #A7F3D0 border */
+.badge-matched,
+.badge-high {
+  background-color: #ECFDF5 !important;
+  color: #065F46 !important;
+  border-color: #A7F3D0 !important;
+}
+.badge-matched .badge-dot,
+.badge-high .badge-dot {
+  background-color: #059669;
+}
+
+/* Partial / Medium Score: #FFFBEB bg, #92400E text, #FDE68A border */
+.badge-partial,
+.badge-medium {
+  background-color: #FFFBEB !important;
+  color: #92400E !important;
+  border-color: #FDE68A !important;
+}
+.badge-partial .badge-dot,
+.badge-medium .badge-dot {
+  background-color: #D97706;
+}
+
+/* Missing / Low Score: #FEF2F2 bg, #991B1B text, #FECACA border */
+.badge-missing,
+.badge-low {
+  background-color: #FEF2F2 !important;
+  color: #991B1B !important;
+  border-color: #FECACA !important;
+}
+.badge-missing .badge-dot,
+.badge-low .badge-dot {
+  background-color: #DC2626;
+}
+
+/* Neutral / Category Badge */
+.badge-neutral {
+  background-color: #F1F5F9;
+  color: #475569;
+  border-color: #E2E8F0;
+}
+
+/* --------------------------------------------------------------------------
+   Buttons (Primary #2563EB, Light Outlines, Generous Hit Area)
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  color: #FFFFFF !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 1px 2px 0 rgba(37, 99, 235, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.btn-secondary {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-heading) !important;
+  border-color: var(--border-color) !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-surface-hover) !important;
+  border-color: #CBD5E1 !important;
+}
+
+.btn-tint {
+  background-color: var(--tint-bg) !important;
+  color: var(--primary) !important;
+  border-color: var(--tint-border) !important;
+}
+
+.btn-tint:hover {
+  background-color: #DBEAFE !important;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-body);
+}
+
+.btn-ghost:hover {
+  background-color: var(--bg-surface-hover);
+  color: var(--text-heading);
+}
+
+.btn-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: var(--radius-md);
+}
+
+.btn-lg {
+  padding: 0.8rem 1.4rem;
+  font-size: 0.95rem;
+  border-radius: var(--radius-lg);
+}
+
+.btn-icon-only {
+  padding: 0.55rem;
+  border-radius: var(--radius-md);
+}
+
+/* --------------------------------------------------------------------------
+   Metric / KPI Stat Cards
+   -------------------------------------------------------------------------- */
+.stat-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.stat-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tint-bg);
+  color: var(--primary);
+  border: 1px solid var(--tint-border);
+}
+
+.stat-value {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.stat-footer {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.775rem;
+}
+
+/* --------------------------------------------------------------------------
+   Progress Bars (Light contrast, Primary Blue Accent)
+   -------------------------------------------------------------------------- */
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #F1F5F9;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: var(--radius-full);
+  transition: width 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-bar-fill.success {
+  background-color: #10B981;
+}
+
+.progress-bar-fill.warning {
+  background-color: #F59E0B;
+}
+
+.progress-bar-fill.danger {
+  background-color: #EF4444;
+}
+
+/* --------------------------------------------------------------------------
+   Tabs (Clean Light Mode Navigation)
+   -------------------------------------------------------------------------- */
+.tabs-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.tab-btn:hover {
+  color: var(--text-heading);
+}
+
+.tab-btn.active {
+  color: var(--primary) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Toggle Switches & Inputs
+   -------------------------------------------------------------------------- */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CBD5E1;
+  transition: .25s;
+  border-radius: 24px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .25s;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+input:checked + .toggle-slider {
+  background-color: var(--primary);
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(20px);
+}
+
+/* Range Sliders */
+.range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #E2E8F0;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(37,99,235,0.3);
+  border: 2px solid #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   Tables (Clean White Rows, Slate-50 Header, Delicate Borders)
+   -------------------------------------------------------------------------- */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  background: var(--bg-surface);
+}
+
+.saas-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.saas-table th {
+  background-color: var(--bg-canvas);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.saas-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-body);
+  vertical-align: middle;
+}
+
+.saas-table tr:last-child td {
+  border-bottom: none;
+}
+
+.saas-table tr:hover td {
+  background-color: var(--bg-surface-subtle);
+}
+
+/* --------------------------------------------------------------------------
+   Modals (Strict Light White Surface, Delicate Border, Elevation)
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+  padding: 1.5rem;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-dialog {
+  background-color: var(--bg-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-2xl) !important;
+  box-shadow: var(--shadow-lg) !important;
+  max-width: 650px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: scale(0.96);
+  transition: transform var(--transition-fast);
+}
+
+.modal-overlay.open .modal-dialog {
+  transform: scale(1);
+}
+
+.modal-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  background-color: var(--bg-canvas);
+}
+
+/* --------------------------------------------------------------------------
+   Lightweight Chart Helpers (Radial gauges, comparison bars)
+   -------------------------------------------------------------------------- */
+.gauge-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauge-svg {
+  transform: rotate(-90deg);
+}
+
+.gauge-bg-circle {
+  fill: none;
+  stroke: #E2E8F0;
+}
+
+.gauge-progress-circle {
+  fill: none;
+  stroke: var(--primary);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke 300ms ease;
+}
+
+.gauge-label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauge-score {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1;
+}
+
+.gauge-subtext {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 0.2rem;
+}

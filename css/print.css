@@ -1,0 +1,151 @@
+/* ==========================================================================
+   PRINT & PDF REPORT STYLES: Strict Light-Theme SaaS PDF Generation
+   ========================================================================== */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 14mm 16mm;
+  }
+
+  /* Force light color fidelity */
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Hide interactive / shell chrome */
+  .sidebar,
+  .top-header,
+  .page-actions,
+  .btn,
+  .tabs-header,
+  .modal-overlay,
+  .no-print {
+    display: none !important;
+  }
+
+  body, html {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  .main-wrapper {
+    margin-left: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .content-canvas {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* PDF Report Sheet Container */
+  .pdf-report-sheet {
+    display: block !important;
+    background: #FFFFFF !important;
+  }
+
+  .pdf-section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #E2E8F0 !important;
+    background: #FFFFFF !important;
+    break-inside: avoid;
+  }
+
+  .tint-banner,
+  .simulator-banner {
+    background-color: #EFF6FF !important;
+    border: 1px solid #DBEAFE !important;
+    break-inside: avoid;
+  }
+
+  /* Maintain semantic badges */
+  .badge-matched,
+  .badge-high {
+    background-color: #ECFDF5 !important;
+    color: #065F46 !important;
+    border: 1px solid #A7F3D0 !important;
+  }
+
+  .badge-partial,
+  .badge-medium {
+    background-color: #FFFBEB !important;
+    color: #92400E !important;
+    border: 1px solid #FDE68A !important;
+  }
+
+  .badge-missing,
+  .badge-low {
+    background-color: #FEF2F2 !important;
+    color: #991B1B !important;
+    border: 1px solid #FECACA !important;
+  }
+
+  .saas-table th {
+    background-color: #F8FAFC !important;
+    color: #475569 !important;
+  }
+
+  .saas-table td {
+    border-bottom: 1px solid #E2E8F0 !important;
+  }
+
+  /* Print Header & Footer */
+  .print-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #2563EB;
+  }
+
+  .print-footer {
+    display: block !important;
+    margin-top: 2rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #E2E8F0;
+    text-align: center;
+    font-size: 8pt;
+    color: #64748B;
+  }
+}
+
+/* In-App PDF Preview Viewport */
+.pdf-preview-viewport {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pdf-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pdf-meta-box {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+}

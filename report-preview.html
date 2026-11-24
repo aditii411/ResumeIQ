@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>CareerSync — Candidate ATS Audit Report (PDF Printable)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/print.css">
+
+  <style>
+    body {
+      background-color: var(--bg-canvas);
+      padding: 2rem;
+    }
+    .standalone-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="standalone-container">
+    <div class="action-bar no-print">
+      <a href="index.html" class="btn btn-secondary btn-sm">
+        &larr; Back to Dashboard
+      </a>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-secondary btn-sm" onclick="PDF_GENERATOR.exportJSON()">
+          Export JSON
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="window.print()">
+          Print / Save as PDF
+        </button>
+      </div>
+    </div>
+
+    <div id="report-view-container"></div>
+  </div>
+
+  <script src="assets/icons/icons.js"></script>
+  <script src="js/design-tokens.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/pdf-generator.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      window.enforceStrictLightTheme();
+      window.PDF_GENERATOR.renderReportView();
+    });
+  </script>
+</body>
+</html>
