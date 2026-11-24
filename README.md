@@ -1,4 +1,4 @@
-# CareerSync SaaS — Strict Light-Theme Career & ATS Platform
+# ResumeIQ — Strict Light-Theme Career & ATS Platform
 
 A modern, high-contrast, airy SaaS web application engineered with a **100% strict light-theme design system** (MANDATORY — NO DARK MODE). Designed for enterprise-grade ATS resume intelligence, career optimization, "What-If" scoring simulations, and standardized PDF audit reporting.
 
